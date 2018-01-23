@@ -51,6 +51,16 @@ AWS Kinesis allows real-time processing of data sent by the Arduino platform.
 ![Schema Data processing](https://github.com/istik/iot_bigdata/blob/master/pic/Capture%20d%E2%80%99e%CC%81cran%202018-01-23%20a%CC%80%2023.04.44.png)
 
 Kinesis runs code blocks (SQL):
+
+`
+CREATE OR REPLACE STREAM "DESTINATION_SQL_STREAM" (device VARCHAR(20), temperature FLOAT, timestamp_t TIMESTAMP);
+CREATE OR REPLACE PUMP "STREAM_PUMP" AS INSERT INTO "DESTINATION_SQL_STREAM"
+ 
+SELECT "device", "temperature", TO_TIMESTAMP(("timestamp_t"+3600)*1000) as "timestamp_t"
+FROM "SOURCE_SQL_STREAM_001"
+
+`
+
 It is possible to subscribe in real time to the AWS IoT MQTT topic to process the messages under different time windows.
 The code is executed on SQL.
 The data obtained in each time window are transformed and stored in AWS S3.
