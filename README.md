@@ -1,10 +1,27 @@
-![Schema Data processing](https://github.com/istik/iot_bigdata/blob/master/pic/projetiot.png)
 
 ## Objective
 
 This project covers the process of deploying a simple architecture for the real-time and batch processing a temperature sensor data on Arduino with open source technologies part of the Big Data ecosystem. The purpose of the solution is to exemplify the flow of data through the different tools, from its capture to its transformation and Insights generation.
 
 Within the presented architecture the services of publication, transfer and storage of data are agnostic to the format in which the data is sent by the Arduino board. This drives the idea of building a centralized service for the distribution of messages from different sending devices to many clients or services capable of consuming this data.
+
+## Hardware
+
+- 1-Wire Digital Thermometer (DS18B20)
+- ESP32
+
+### Benefits and Features of DS18B20
+
+- Unique 1-Wire® Interface Requires Only One Port Pin for Communication
+- Reduce Component Count with Integrated Temperature Sensor and EEPROM
+- Measures Temperatures from -55°C to +125°C (-67°F to +257°F)
+- ±0.5°C Accuracy from -10°C to +85°C
+
+### Benefits and Features of ESP32
+
+- Hybrid Wi-Fi & Bluetooth Chip
+- High Level of Integration
+- Ultra-Low Power Consumption
 
 ## Versions and tools
 - Arduino IDE 1.8.5
