@@ -1,3 +1,5 @@
+![Schema Data processing](https://github.com/istik/iot_bigdata/blob/master/pic/projetiot.png)
+
 ## Objective
 
 This project covers the process of deploying a simple architecture for the real-time and batch processing a temperature sensor data on Arduino with open source technologies part of the Big Data ecosystem. The purpose of the solution is to exemplify the flow of data through the different tools, from its capture to its transformation and Insights generation.
