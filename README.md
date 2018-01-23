@@ -55,5 +55,7 @@ The data obtained in each time window are transformed and stored in AWS S3.
 
 ## Libraries
 OneWire 2.3.3
+
 AWS_IOT 1.0.0
+
 NTPClient 3.1.0
