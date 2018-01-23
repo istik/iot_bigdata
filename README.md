@@ -53,6 +53,13 @@ It is possible to subscribe in real time to the AWS IoT MQTT topic to process th
 The code is executed on SQL.
 The data obtained in each time window are transformed and stored in AWS S3.
 
+## Alarm system
+
+![Schema aws sns](https://github.com/istik/iot_bigdata/blob/master/pic/awssns.jpg)
+
+Amazon Simple Notification Service (SNS) is a flexible, fully managed pub/sub messaging and mobile notifications service for coordinating the delivery of messages to subscribing endpoints and clients. 
+
+
 ## Libraries
 OneWire 2.3.3
 
